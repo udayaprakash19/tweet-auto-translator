@@ -46,6 +46,8 @@ If you want to modify the source code, the original source files are in the `sou
 
 ## Built With
 
+[![Built with PlugThis.ai](https://plugthis.ai/plugthis-og.png)](https://plugthis.ai)
+
 Built in 2 min with [PlugThis](https://plugthis.ai). Describe any extension, get it built. [Try it](https://plugthis.ai) — LTDs from $89.
 
 ## Contributing
