@@ -1,0 +1,179 @@
+:root {
+  --twitter-blue: #1d9bf0;
+  --twitter-bg: #000000;
+  --twitter-card: #15181c;
+  --twitter-text: #eff3f4;
+  --twitter-muted: #71767b;
+  --twitter-border: #2f3336;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--twitter-bg);
+  color: var(--twitter-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.options-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 20px;
+}
+
+.options-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.settings-card {
+  background: var(--twitter-card);
+  border: 1px solid var(--twitter-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.input-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input-group input, .input-group select {
+  background: var(--twitter-bg);
+  border: 1px solid var(--twitter-border);
+  color: var(--twitter-text);
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--twitter-blue);
+}
+
+.input-group small {
+  margin-top: 6px;
+  color: var(--twitter-muted);
+  font-size: 12px;
+}
+
+.input-group a {
+  color: var(--twitter-blue);
+  text-decoration: none;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.save-button {
+  width: 100%;
+  background-color: var(--twitter-text);
+  color: var(--twitter-bg);
+  border: none;
+  padding: 12px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.save-button:hover {
+  opacity: 0.9;
+}
+
+.status-message {
+  margin-top: 16px;
+  text-align: center;
+  color: #00ba7c;
+  font-weight: 600;
+}
+
+/* Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3e4144;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--twitter-blue);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.info-footer {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--twitter-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
