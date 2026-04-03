@@ -35,15 +35,14 @@ This extension requires a **GROQ API key** to function. You need to set it up be
 2. Click the extension icon in your toolbar and open **Settings** (or right-click the extension and select **Options**).
 3. Paste your API key into the **GROQ API Key** field and click **Save Configuration**.
 
-If you're modifying the source code and rebuilding:
+> **Note:** Never share or commit your real API key.
 
-1. Copy `source/.env` and replace `YOUR_GROQ_API_KEY_HERE` with your actual key:
-   ```
-   GROQ_API_KEY=gsk_your_key_here
-   ```
-2. Run `npm install && npm run build` from the `source/` directory.
+### For Developers
 
-> **Note:** Never share or commit your real API key. The `.env` file is for local development only.
+If you want to modify the source code, the original source files are in the `source/` directory. After making changes:
+
+1. Replace `YOUR_GROQ_API_KEY_HERE` in `source/.env` with your actual key.
+2. Run `npm install && npm run build` from the `source/` directory to rebuild.
 
 ## Built With
 
